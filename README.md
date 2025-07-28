@@ -36,16 +36,20 @@ This project is a **front-end clone** of the official Netflix India homepage. It
 - 💡 Clean, well-structured, and easy-to-understand HTML/CSS
 
 ---
+
 ## 📁 Directory Structure
-
-.
-├──index.html
+```
+netflixclone/
+├── index.html
 ├── style.css
-└── README.md
-└──contributing.md
-
+├── README.md
+├── contributing.md
+└── Screenshots/
+  ├── Category.png
+  ├── FAQs.png
+  └── Main-Page.png
+```
 ---
-
 ## 🛠 Tech Stack
 
 - **HTML5** – Markup structure  
@@ -55,48 +59,57 @@ This project is a **front-end clone** of the official Netflix India homepage. It
 ---
 
 ## 🧠 System Architecture
-[ User ]
-↓
-[ index.html ]
-↓
-[ style.css ]
+```
+User
+  │
+  ▼
+index.html
+  │
+  ▼
+style.css
+```
 
-ince this is a static clone, the flow is simple: HTML renders the structure, CSS controls the layout and responsiveness, and image assets enhance visual appeal.
+
+Since this is a static clone, the flow is simple: HTML renders the structure, CSS controls the layout and responsiveness, and image assets enhance visual appeal.
 
 ---
 
 ## 📸 Screenshots
 
 1. Introduction Page
-![introduction Page](screenschots/Main Page.png)
+![introduction Page](screenshots/Main-Page.png)
 
 2. Category Page
-![Category Page](screenschots/Category.png)
+![Category Page](screenshots/Category.png)
 
 3. Frequently Asked Questions
-![FAQs](screenschots/FAQs.png)
+![FAQs](screenshots/FAQs.png)
 
+---
 ## 🚀 How to Use / Run
 
 🌐 Open in Browser
 Just open index.html in your favorite browser:
 
-bash
-Copy
-Edit
 start index.html  # Windows
+
 # or
+
 open index.html   # macOS
 ✅ No server or dependency installation is required!
 
-🌐 Community & Support
-Channel	Purpose
-GitHub Issues	Bug reports, feature requests
-GitHub Discussions	Q&A, ideas, suggestions
-Discord	Real-time chat, pair programming
-GSSoC Mentors	Onboarding help, code reviews
+---
 
-🤝 Contributing
+## 🌐 Community & Support
+
+| Channel           | Purpose                             |
+|-------------------|--------------------------------------|
+| GitHub Issues     | Bug reports, feature requests        |
+| GitHub Discussions| Q&A, ideas, suggestions              |
+| Discord           | Real-time chat, pair programming     |
+| GSSoC Mentors     | Onboarding help, code reviews        |
+---
+## 🤝 Contributing
 We welcome contributions of all kinds!
 
 Fork the repository
@@ -109,10 +122,17 @@ Create a pull request with a meaningful description
 
 Please read our CONTRIBUTING.md for detailed guidelines.
 
-📄 License
+---
+
+## 📄 License
 This project is open source and available under the MIT License.
 
-🌟 Acknowledgment
+---
+
+## 🌟 Acknowledgment
 This project is a part of GirlScript Summer of Code (GSSoC). We're glad to support first-time contributors and open-source learners!
+
+
+
 
 ⭐ If you like this project, don’t forget to star the repo and contribute!
