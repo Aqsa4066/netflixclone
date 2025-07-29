@@ -15,9 +15,11 @@ body {
 .main {
     height: 100vh;
     position: relative;
+    /* --- Here is the change --- */
+    background-image: url('https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=2070&auto=format&fit=crop'); 
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: max(1200px, 100vw);
+    background-size: cover; /* Use cover to ensure it always fills the screen */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -27,7 +29,8 @@ body {
 .main .box {
     height: 100vh;
     width: 100%;
-    opacity: 0.69;
+    /* You can adjust this opacity to make the image darker or lighter */
+    opacity: 0.7; 
     background-color: black;
     position: absolute;
     top: 0;
@@ -172,9 +175,6 @@ nav img {
     flex-direction: row-reverse;
 }
 
-.third {
-
-}
 
 section.first > div {
     display: flex;
