@@ -9,20 +9,25 @@
 
   <body>
     <div class="main">
+      <!-- Navigation-->
       <nav>
-        <span
-          ><img width="63" src="assets/Netflix_2015_logo.svg" alt=""
-        /></span>
-        <div class="nav-btn">
-          <button class="btn" id="theme-toggle">☀️</button>
-          <button class="btn btn-lang">
-            <img
-              class="language-switch"
-              src="assets/language-svgrepo-com.svg"
-            /><span class="english">English</span
-            ><img class="down-arrow" src="assets/down-arrow-svgrepo-com.svg" />
+        <!-- Netflix logo-->
+        <span>
+          <img width="63" src="assets/Netflix_2015_logo.svg" alt=""/>
+        </span>
+        <div class="nav-btn" id="nav-btn">
+          <!-- Theme Toggle-->
+          <button class="btn" id="theme-toggle" aria-label="Toggle Theme">☀️</button>
+          <!-- Language Selector-->
+          <button class="btn btn-lang" aria-label="Language Selector" disabled>
+            <img class="language-switch" src="assets/language-svgrepo-com.svg" alt="Language Icon"/>
+              <span class="english">English</span>
+              <img class="down-arrow" src="assets/down-arrow-svgrepo-com.svg" />
           </button>
-          <button class="btn btn-red-sm">Sign In</button>
+          <!-- Sign In Button-->
+          <button class="btn btn-red-sm"  aria-label="Sign In">Sign In</button>
+          <!-- Hamburger for mobile-->
+          <div class="hamburger" id="hamburger" aria-label="Toggle Menu">&#9776;</div>
         </div>
       </nav>
       <div class="box"></div>
