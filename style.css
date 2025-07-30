@@ -160,7 +160,6 @@ nav button {
   align-items: center;
   gap: 10px;
 }
-
 .btn{
   background-color: #333;    
   color: white;
@@ -175,7 +174,8 @@ nav button {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
   transform: scale(1.05);
 }
-  
+
+
 .btn-red {
   background: red;
   font-size: 18px;
