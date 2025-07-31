@@ -175,12 +175,23 @@ nav button {
   border-radius: 4px;
   cursor: pointer;
   text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 }
 
 .btn-red {
   background: red;
   font-size: 18px;
   font-weight: bold;
+}
+
+.btn-red:hover {
+  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
+  transform: scale(1.07);
 }
 
 #theme-toggle {
