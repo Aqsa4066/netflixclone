@@ -121,11 +121,17 @@ nav button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: var(--main-text-color);
+  color: white;
   position: relative;
+  z-index: 2; 
   font-family: "Martel Sans", serif;
   gap: 23px;
   padding: 0 30px;
+  text-align: center;
+}
+
+.hero span {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); 
 }
 
 .hero > :first-child {
@@ -184,6 +190,69 @@ nav button {
   justify-content: center;
   cursor: pointer;
   line-height: 1;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.email-form form {
+  display: flex;
+  width: 100%;
+  max-width: 900px; 
+  padding: 0 20px;
+  gap: 12px; 
+}
+
+.email-form input[type="email"] {
+  flex: 2;
+  height: 56px;
+  padding: 0 16px;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  outline: none;
+}
+
+.email-form input::placeholder {
+  color: #aaa;
+  font-size: 16px;
+}
+
+.email-form .btn-red {
+  height: 56px;
+  padding: 0 26px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.email-form .btn-red:hover {
+  background-color: #f40612;
+}
+
+@media (max-width: 600px) {
+  .email-form form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .email-form input[type="email"],
+  .email-form .btn-red {
+    width: 100%;
+    border-radius: 2px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
 }
 
 .language-switch {
