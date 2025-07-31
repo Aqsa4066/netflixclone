@@ -85,7 +85,8 @@ body {
 }
 
 .main .box {
-  height: 99vh;
+  min-height: 99vh;
+  overflow: visible; 
   width: 100%;
   opacity: 0.79;
   background-color: var(--main-page-bg);
@@ -97,10 +98,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 65vw;
-  margin: auto;
-  height: 85px;
-  padding: 0 145px;
+  padding: 20px 60px;
+  background-color:  rgba(0, 0, 0, 0.8);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav img {
@@ -154,21 +156,23 @@ nav button {
 }
 
 .nav-btn {
-  width: 186px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 14px;
 }
 
 .btn {
   background: #666;
   color: white;
-  padding: 8px 20px;
+  padding: 8px 14px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  text-decoration: none;
+}
+.btn:hover {
+  background-color: #4d4d4d;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  transform: scale(1.03);
 }
 
 .btn-red {
@@ -188,11 +192,13 @@ nav button {
 
 .language-switch {
   width: 15px;
+  filter: var(--btn-lang-svg-filter);
   padding: 2px;
 }
 
 .down-arrow {
   width: 8px;
+  filter: var(--btn-lang-svg-filter);
   padding: 0 2px;
 }
 
@@ -219,19 +225,63 @@ nav button {
   color: var(--btn-text-on-light-bg);
   display: flex;
   align-items: center;
+  padding: 8px 12px;
+  gap: 6px;
+  border-radius: 4px;
+  cursor: default;
+}
+.btn-lang:hover {
+  background-color: #333;
+  transform: scale(1.03);
 }
 
 .english {
-  padding: 0 5px;
+  font-size: 14px;
+}
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: var(--main-text-color);
+}
+
+/* Show hamburger on mobile */
+@media (max-width: 768px) {
+  .nav-btn {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    background-color: var(--main-page-bg);
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 200;
+  }
+
+  .nav-btn.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+  }
 }
 
 .btn-red-sm {
   background-color: var(--btn-red-bg);
   color: var(--btn-red-text);
 }
+.btn-red-sm:hover {
+  background-color: #b0060f;
+  transform: scale(1.03);
+}
 
 .btn-lang .language-switch,
 .btn-lang .down-arrow {
+  width: 10px;
   filter: var(--btn-lang-svg-filter);
 }
 .first {
