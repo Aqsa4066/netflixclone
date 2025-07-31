@@ -18,9 +18,9 @@
           <button class="btn btn-lang">
             <img
               class="language-switch"
-              src="assets/language-svgrepo-com.svg"
+              src="assets/language-svgrepo-com.svg" alt="Language icon"
             /><span class="english">English</span
-            ><img class="down-arrow" src="assets/down-arrow-svgrepo-com.svg" />
+            ><img class="down-arrow" src="assets/down-arrow-svgrepo-com.svg"  alt="Dropdown arrow" />
           </button>
           <button class="btn btn-red-sm">Sign In</button>
         </div>
@@ -459,8 +459,8 @@
       function setTheme(theme) {
         document.body.setAttribute("data-theme", theme);
         localStorage.setItem("theme", theme); // Save user's preference
-        themeToggle.textContent = theme === "dark" ? "🌙" : "☀️"; // Update button emoji
-      }
+        themeToggle.textContent = theme === "dark" ? "☀️" : "🌙"; // Update button emoji
+      } 
 
       // Check for saved theme preference on load
       document.addEventListener("DOMContentLoaded", () => {
