@@ -158,13 +158,28 @@ nav button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
+}
+.nav-btn .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px; /* Standardize height */
+  padding: 0 12px;
+  font-size: 14px;
+  line-height: 1;
 }
 
 .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 36px;
+  padding: 0 14px;
+  font-size: 14px;
+  line-height: 1;
   background: #666;
   color: white;
-  padding: 8px 20px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
@@ -230,6 +245,11 @@ transform: scale(1.05);
   color: var(--btn-text-on-light-bg);
   display: flex;
   align-items: center;
+  gap: 4px;
+  height: 36px;
+  padding: 0 14px;
+  font-size: 14px;
+  line-height: 1;
 }
 
 .english {
@@ -237,8 +257,25 @@ transform: scale(1.05);
 }
 
 .btn-red-sm {
-  background-color: var(--btn-red-bg);
-  color: var(--btn-red-text);
+  background-color: #e50914;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  width: 120px;           
+  height: 40px;   
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.btn-red-sm:hover {
+  background-color: #f40612;
 }
 
 .btn-lang .language-switch,
@@ -274,7 +311,15 @@ transform: scale(1.05);
     font-size: 18px;
   }
   nav {
-    max-width: 90vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;  /* better than 65vw */
+    margin: auto;
+    height: 85px;
+    padding: 0 20px;
+    box-sizing: border-box;
   }
   .main input {
     padding: 7px 53px 8px 14px;
