@@ -457,8 +457,8 @@
       function setTheme(theme) {
         document.body.setAttribute("data-theme", theme);
         localStorage.setItem("theme", theme); // Save user's preference
-        themeToggle.textContent = theme === "dark" ? "🌙" : "☀️"; // Update button emoji
-      }
+        themeToggle.textContent = theme === "dark" ? "☀️" : "🌙"; // Update button emoji
+      } 
 
       // Check for saved theme preference on load
       document.addEventListener("DOMContentLoaded", () => {
