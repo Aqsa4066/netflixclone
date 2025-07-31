@@ -121,11 +121,17 @@ nav button {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  color: var(--main-text-color);
+  color: white;
   position: relative;
+  z-index: 2; 
   font-family: "Martel Sans", serif;
   gap: 23px;
   padding: 0 30px;
+  text-align: center;
+}
+
+.hero span {
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7); 
 }
 
 .hero > :first-child {
@@ -197,6 +203,69 @@ transform: scale(1.05);
   line-height: 1;
 }
 
+.email-form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.email-form form {
+  display: flex;
+  width: 100%;
+  max-width: 800px; 
+  padding: 0 20px;
+  gap: 12px; 
+}
+
+.email-form input[type="email"] {
+  flex: 1;
+  height: 56px;
+  padding: 0 16px;
+  font-size: 16px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+  outline: none;
+}
+
+.email-form input::placeholder {
+  color: #aaa;
+  font-size: 16px;
+}
+
+.email-form .btn-red {
+  height: 56px;
+  padding: 0 26px;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+}
+
+.email-form .btn-red:hover {
+  background-color: #f40612;
+}
+
+@media (max-width: 600px) {
+  .email-form form {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .email-form input[type="email"],
+  .email-form .btn-red {
+    width: 100%;
+    border-radius: 2px;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
 .language-switch {
   width: 15px;
   padding: 2px;
@@ -225,25 +294,42 @@ transform: scale(1.05);
 }
 
 .btn-lang {
-  background-color: var(--section-bg);
+ background-color: var(--section-bg);
   border: 1px solid var(--btn-default-text);
   color: var(--btn-text-on-light-bg);
   display: flex;
   align-items: center;
+  gap: 6px; 
+  padding: 6px 10px;
+  height: 36px;
+  border-radius: 4px;
 }
 
 .english {
-  padding: 0 5px;
+  font-size: 14px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
 }
 
 .btn-red-sm {
   background-color: var(--btn-red-bg);
   color: var(--btn-red-text);
+  white-space: nowrap;       
+  padding: 8px 16px;      
+  font-size: 14px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .btn-lang .language-switch,
 .btn-lang .down-arrow {
   filter: var(--btn-lang-svg-filter);
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
 }
 .first {
   display: flex;
