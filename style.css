@@ -173,12 +173,6 @@ nav button {
   border-radius: 4px;
   cursor:pointer;
   text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn:hover {
-transform: scale(1.05);
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 }
 
 .btn-red {
@@ -251,6 +245,14 @@ transform: scale(1.05);
 
 .btn-red-sm {
   background-color: var(--btn-red-bg);
+  color: var(--btn-red-text);
+  padding: 8px 16px;             
+  line-height: 1.2;               
+  white-space: nowrap;            
+  display: inline-block;          
+  height: auto;                   
+  overflow: visible;              
+  writing-mode: horizontal-tb;    
   color: var(--btn-red-text); 
   display: flex;
   align-items: center;
@@ -338,37 +340,6 @@ section.first > div :nth-child(2) {
     align-items: center;
     justify-content: center;
 }
-@media screen and (max-width:1300px){
-    .first{
-        flex-wrap: wrap;
-    }
-    .secImg img {
-        width: 305px;
-        position: relative;
-        z-index: 10;
-    }
-    .hero> :first-child {
-        font-size: 32px;
-    }
-    .hero> :nth-child(2){
-        font-size: 18px;
-    }
-    .hero> :nth-child(3){
-        font-size: 18px;
-    }
-    nav{
-        max-width: 90vw;
-    }
-    .main input{
-        padding: 7px 53px 8px 14px;
-    }
-    .hero-buttons {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 14px;
-    }
     .faq h2{
         text-align: center;
         font-size: 32px;
@@ -385,15 +356,6 @@ section.first > div :nth-child(2) {
         color: white;
         gap: 25px;
     }
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
-  }
-  .faq h2 {
-    text-align: center;
-    font-size: 32px;
-  }
 }
 
 .secImg img {
@@ -419,21 +381,71 @@ section.first > div :nth-child(1) {
 section.first > div :nth-child(2) {
   font-size: 24px;
 }
-.faq h2 {
-  text-align: center;
-  font-size: 48px;
-}
+
 .faq {
   background-color: var(--section-bg);
   color: var(--section-text-color);
-  padding: 34px;
+  padding-left: 148px;
+  padding-right: 148px;
+  text-size-adjust: 100%;
+  justify-content: space-between;
+  
+}
+.faq h2 {
+  font-size: 24px;
 }
 .faqbox{
     display: flex;
+    flex-direction: column;
     transition: all 0.5s ease-out;
     background-color: rgb(84, 83, 83);
     justify-content: space-between;
     padding: 24px;
+    max-width: 1607px;
+    font-size: 24px;
+    font-style: normal;
+    cursor: pointer;
+    margin-top: 7px;
+}
+
+
+
+
+.faqbox:hover {
+  background-color: rgb(147, 146, 146);
+}
+
+.faqbox svg {
+  filter: invert(1);
+  transition: transform 0.3s ease;
+}
+
+.faqbox.active svg {
+  transform: rotate(45deg);
+}
+
+
+.faq-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.faq-answer {
+  width: 100%;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 0px;
+  border-top: none;
+}
+
+.faqbox.active .faq-answer {
+  max-height: 200px;
+  padding-top: 20px;
     max-width: 60vw;
     font-size: 20px;
     margin: 20px auto;
@@ -461,6 +473,7 @@ footer{
 }
 .faqbox svg {
   filter: var(--faq-svg-filter);
+  
 }
 .faqbox {
   display: flex;
@@ -671,66 +684,7 @@ body {
   padding: 20px;
 }
 
-.faq h2 {
-  text-align: center;
-  font-size: 48px;
-  color: white;
-  margin-bottom: 30px;
-}
 
-.faq {
-  background-color: black;
-  color: white;
-  padding: 34px;
-}
-
-.faqbox:hover {
-  background-color: rgb(147, 146, 146);
-}
-
-.faqbox svg {
-  filter: invert(1);
-  transition: transform 0.3s ease;
-}
-
-.faqbox.active svg {
-  transform: rotate(45deg);
-}
-
-.faqbox {
-  display: flex;
-  transition: all 0.5s ease-out;
-  background-color: rgb(84, 83, 83);
-  justify-content: space-between;
-  align-items: center;
-  padding: 24px;
-  max-width: 60vw;
-  font-size: 24px;
-  margin: 20px auto;
-  cursor: pointer;
-  flex-direction: column;
-}
-
-.faq-question {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-}
-
-.faq-answer {
-  width: 100%;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
-  font-size: 18px;
-  line-height: 1.5;
-}
-
-.faqbox.active .faq-answer {
-  max-height: 200px;
-  padding-top: 20px;
-}
 
 @media screen and (max-width: 1300px) {
   .faq h2 {
@@ -868,4 +822,5 @@ footer .questions a {
   font-size: 14px;
   color: #b3b3b3;
   padding-top: 20px;
+}
 }
