@@ -774,6 +774,7 @@ body {
   min-width: 280px;
 }
 
+
 .input-container input {
   width: 100%;
   padding: 16px 14px 8px 14px;
@@ -784,6 +785,15 @@ body {
   border-radius: 4px 0 0 4px; /* left rounded */
   height: 56px;
   box-sizing: border-box;
+.footer-input-container{
+  padding: 16px 14px 8px 14px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid rgba(137, 134, 134, 0.7);
+  background: rgba(23, 23, 23, 0.7);
+  color:white;
+  width: 100%;
+
 }
 
 .input-container label {
@@ -868,6 +878,9 @@ footer .questions a {
 
 .footer-links-column a {
   color: #b3b3b3;
+
+.footer-links a {
+  color: #b3b3b3;;
   text-decoration: none;
 }
 
