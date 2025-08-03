@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
 
 @font-face {
@@ -13,18 +14,18 @@
   --section-text-color: white;
 
   --faq-box-bg: rgb(84, 83, 83);
-  --faq-box-hover-bg: rgb(147, 146, 146);
+  --faq-box-hover-bg:rgb(147, 146, 146);
   --faq-svg-filter: invert(1);
 
   --first-image-filter: none;
 
-  --btn-text-on-light-bg: white;
+  --btn-text-on-light-bg:white;
   --btn-lang-svg-filter: invert(1);
 
-  --separation-color: rgb(79, 74, 74);
+  --separation-color:rgb(248, 38, 38);
   --btn-default-bg: rgb(117, 115, 115);
-  --btn-default-text: white;
-  --btn-red-bg: red;
+  --btn-default-text:white;
+  --btn-red-bg: rgb(228, 15, 15);
   --btn-red-text: white;
   --input-bg-color: rgba(23, 23, 23, 0.7);
   --input-border-color: rgba(126, 122, 122, 0.5);
@@ -44,7 +45,7 @@ body[data-theme="light"] {
 
   --first-image-filter: brightness(1.5) grayscale(0.5);
 
-  --btn-text-on-light-bg: black;
+  --btn-text-on-light-bg:black;
   --btn-lang-svg-filter: none;
 }
 * {
@@ -76,8 +77,9 @@ body {
     position: absolute;
     top: 0;
 
-  background-image: url(home_page_background_image.jpg);
+  background-image: url(home_page_background_image.jpg), 0.7;
   height: 99vh;
+  width: 100%;
   position: relative;
   background-position: center center;
   background-repeat: no-repeat;
@@ -100,11 +102,12 @@ nav {
   max-width: 65vw;
   margin: auto;
   height: 85px;
-  padding: 0 145px;
+  padding:0 145px;
 }
 
 nav img {
-  color: red;
+  color: rgb(255, 0, 0);
+  padding: 20px;
   width: 130px;
   position: relative;
   z-index: 10;
@@ -113,6 +116,7 @@ nav img {
 nav button {
   position: relative;
   z-index: 10;
+  margin:5%;
 }
 
 .hero {
@@ -158,16 +162,17 @@ nav button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap:10px;
 }
 
 .btn {
   background: #666;
-  color: white;
-  padding: 8px 20px;
+  color: rgb(255, 255, 255);
+  padding:5px 25px;
+  margin: 10px 12px;
   border: none;
   border-radius: 4px;
-  cursor: pointer;
+  cursor:pointer;
   text-decoration: none;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -178,14 +183,14 @@ transform: scale(1.05);
 }
 
 .btn-red {
-  background: red;
-  font-size: 18px;
-  font-weight: bold;
+  background:rgb(228, 15, 15);
+  font-size:15px;
+  font-weight:lighter;
 }
 
 .btn-red:hover {
-  box-shadow: 0 6px 20px rgba(255, 0, 0, 0.4);
-  transform: scale(1.07);
+  box-shadow:0px 6px 20px rgb(171, 212, 171);
+  transform: scale(1.08);
 }
 
 #theme-toggle {
@@ -200,6 +205,15 @@ transform: scale(1.05);
 .language-switch {
   width: 15px;
   padding: 2px;
+}
+#language-select {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  appearance: none;
+  padding: 8px;
+  cursor: pointer;
 }
 
 .down-arrow {
@@ -238,14 +252,10 @@ transform: scale(1.05);
 
 .btn-red-sm {
   background-color: var(--btn-red-bg);
-  color: var(--btn-red-text);
-  padding: 8px 16px;             
-  line-height: 1.2;               
-  white-space: nowrap;            
-  display: inline-block;          
-  height: auto;                   
-  overflow: visible;              
-  writing-mode: horizontal-tb;    
+  color: var(--btn-red-text); 
+  display: flex;
+  align-items: center;
+  margin:3px;
 }
 
 .btn-lang .language-switch,
@@ -426,11 +436,12 @@ section.first > div :nth-child(2) {
     justify-content: space-between;
     padding: 24px;
     max-width: 60vw;
-    font-size: 24px;
+    font-size: 20px;
     margin: 20px auto;
     cursor: pointer;
+    border-radius: 15px;
 }
-footer{
+/* footer{
     color: white;
     max-width: 60vw;
     margin: auto;
@@ -448,7 +459,7 @@ footer{
 .faqbox:hover {
   background-color: var(--faq-box-hover-bg);
 
-}
+} */
 .faqbox svg {
   filter: var(--faq-svg-filter);
 }
@@ -735,7 +746,6 @@ body {
     font-size: 16px;
   }
 }
-/* >>>>>>> main */
 
 /* FOOTER SIGNUP */
 .footer-signup {
@@ -745,41 +755,41 @@ body {
 }
 
 .footer-signup p {
-  font-size: 18px;
+  font-size: 25px;
   margin-bottom: 20px;
-  color: white;
+  color:white;
 }
 
 .footer-signup-box {
   display: flex;
   justify-content: center;
+  align-items: center; /*Vertically aligns input and button */
   gap: 10px;
   flex-wrap: wrap;
 }
 
-/* Floating label for footer input */
 .input-container {
   position: relative;
-  display: inline-block;
   flex: 1;
   min-width: 280px;
-  padding-right: 25px;
 }
 
 .input-container input {
+  width: 100%;
   padding: 16px 14px 8px 14px;
   font-size: 16px;
-  border-radius: 4px;
-  border: 1px solid rgba(126, 122, 122, 0.7);
+  border: 1px solid rgba(137, 134, 134, 0.7);
   background: rgba(23, 23, 23, 0.7);
   color: white;
-  width: 100%;
+  border-radius: 4px 0 0 4px; /* left rounded */
+  height: 56px;
+  box-sizing: border-box;
 }
 
 .input-container label {
   position: absolute;
-  left: 14px;
   top: 50%;
+  left: 14px;
   transform: translateY(-50%);
   color: #aaa;
   font-size: 16px;
@@ -791,8 +801,30 @@ body {
 .input-container input:not(:placeholder-shown) + label {
   top: 6px;
   font-size: 12px;
-  color: #aaa; /* keep same grey color */
+  color: #aaa;
 }
+
+.input-container input,
+.btn-red {
+  height: 50px; /* Same height for both */
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.btn-red {
+  padding: 0 20px;
+  border-radius: 4px;
+  border: none;
+  background-color: #e50914;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn-red:hover {
+  background-color: #b20710;
+}
+
 
 /* FOOTER LINKS & LANGUAGE */
 footer {
@@ -800,7 +832,7 @@ footer {
   margin: auto;
   padding: 40px 0;
   color: #b3b3b3;
-  font-size: 14px;
+  font-size: 15px;
 }
 
 footer .questions {
@@ -813,36 +845,47 @@ footer .questions a {
 }
 
 .footer-links {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 500px;
+  flex-wrap: wrap;
   margin-bottom: 30px;
 }
 
-.footer-links ul {
-  list-style: none;
+.footer-links-column {
+  flex: 1;
+  min-width: 250px;
 }
 
-.footer-links li {
+.footer-links-column ul {
+  list-style: none;
+  margin-bottom: 20px;
+}
+
+.footer-links-column li {
   margin-bottom: 12px;
 }
 
-.footer-links a {
+.footer-links-column a {
   color: #b3b3b3;
   text-decoration: none;
 }
 
-.footer-links a:hover {
+.footer-links-column a:hover {
   text-decoration: underline;
 }
 
 .footer-bottom {
   display: flex;
-  flex-direction: column; /* stack vertically */
-  align-items: flex-start;
+  flex-direction: column;
+  align-items: center; 
   gap: 10px;
   margin-top: 20px;
+  border-top: 1px solid #333;
+  padding-top: 20px;
+  text-align: center; 
 }
+
 
 .language-select {
   background: rgba(0, 0, 0, 0.7);
@@ -858,4 +901,31 @@ footer .questions a {
   font-size: 14px;
   color: #b3b3b3;
   padding-top: 20px;
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  left:30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  background: #e50914;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.back-to-top:hover {
+  background-color: #b20710;
 }
