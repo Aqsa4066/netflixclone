@@ -18,7 +18,7 @@
 
   --first-image-filter: none;
 
-  --btn-text-on-light-bg:white;
+  --btn-text-on-light-bg:rgb(239, 232, 232);
   --btn-lang-svg-filter: invert(1);
 
   --separation-color:rgb(248, 38, 38);
@@ -31,7 +31,7 @@
 }
 
 /* Light Mode Overrides for the variables */
-body[data-theme="light"] {
+body[data-theme="light"]{
   --main-page-bg: white;
   --main-text-color: black;
 
@@ -42,10 +42,10 @@ body[data-theme="light"] {
   --faq-box-hover-bg: lightgray;
   --faq-svg-filter: none;
 
-  --first-image-filter: brightness(1.5) grayscale(0.5);
+  --first-image-filter: brightness(1.2) grayscale(0.5);
 
   --btn-text-on-light-bg:black;
-  --btn-lang-svg-filter: none;
+  --btn-lang-svg-filter:none;
 }
 * {
   padding: 0;
@@ -127,30 +127,31 @@ nav button {
   color: var(--main-text-color);
   position: relative;
   font-family: "Martel Sans", serif;
-  gap: 23px;
+  gap:23px;
   padding: 0 30px;
+
 }
 
 .hero > :first-child {
-  font-weight: bolder;
+  font-weight:500;
   font-size: 48px;
   text-align: center;
 }
 
 .hero > :nth-child(2) {
-  font-weight: 400;
-  font-size: 24px;
+  font-weight: 300;
+  font-size: 25px;
   text-align: center;
 }
 
 .hero > :nth-child(3) {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 20px;
   text-align: center;
 }
 
 .separation {
-  height: 6px;
+  height: 2px;
   background-color: var(--separation-color);
   position: relative;
   z-index: 20;
@@ -166,7 +167,7 @@ nav button {
 
 .btn {
   background: #666;
-  color: rgb(255, 255, 255);
+  color: rgb(245, 241, 241);
   padding:5px 25px;
   margin: 10px 12px;
   border: none;
@@ -185,6 +186,7 @@ transform: scale(1.05);
   background:rgb(228, 15, 15);
   font-size:15px;
   font-weight:lighter;
+  padding: 10px 30px;
 }
 
 .btn-red:hover {
@@ -211,12 +213,12 @@ transform: scale(1.05);
   border: none;
   font-size: 16px;
   appearance: none;
-  padding: 8px;
+  padding: 2px 4px;
   cursor: pointer;
 }
 
 .down-arrow {
-  width: 8px;
+  width:12px;
   padding: 0 2px;
 }
 
@@ -239,11 +241,13 @@ transform: scale(1.05);
 
 .btn-lang {
   background-color: var(--section-bg);
-  border: 1px solid var(--btn-default-text);
+  border: 1px solid (--btn-default-bg);
   color: var(--btn-text-on-light-bg);
   display: flex;
   align-items: center;
+  border-radius: 4px;
 }
+
 
 .english {
   padding: 0 5px;
@@ -254,7 +258,9 @@ transform: scale(1.05);
   color: var(--btn-red-text); 
   display: flex;
   align-items: center;
+  padding: 8 20px;
   margin:3px;
+  white-space: nowrap;
 }
 
 .btn-lang .language-switch,
@@ -284,7 +290,8 @@ transform: scale(1.05);
     font-size: 32px;
   }
   .hero > :nth-child(2) {
-    font-size: 18px;
+    font-size:20px;
+  
   }
   .hero > :nth-child(3) {
     font-size: 18px;
@@ -307,7 +314,7 @@ transform: scale(1.05);
     flex-wrap: wrap;
 }
 
-.second {
+.second{
     flex-direction: row-reverse;
 }
 
@@ -369,10 +376,7 @@ section.first > div :nth-child(2) {
         justify-content: center;
         gap: 14px;
     }
-    .faq h2{
-        text-align: center;
-        font-size: 32px;
-    }
+   
     footer{
         max-width: 90vw;
     }
@@ -384,8 +388,10 @@ section.first > div :nth-child(2) {
         grid-template-columns: 1fr 1fr;
         color: white;
         gap: 25px;
-    }
-    flex-direction: column;
+      }
+ 
+   display: flex;
+    flex-direction:column;
     align-items: center;
     justify-content: center;
     gap: 14px;
@@ -455,6 +461,7 @@ footer{
     display: flex;
     flex-direction: column;
     gap: 23px;
+}
 .faqbox:hover {
   background-color: var(--faq-box-hover-bg);
 
