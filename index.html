@@ -302,6 +302,20 @@
     </section>
     <div class="separation"></div>
 
+
+    <!-- FOOTER START -->
+<footer >
+  <!-- SIGN-UP SECTION -->
+<div class="footer-signup">
+  <p>Ready to watch? Enter your email to create or restart your membership.</p>
+  <form class="footer-signup-box">
+    <div class="input-container">
+      <input type="email" id="email-footer" required placeholder=" " />
+      <label for="email-footer">Email Address</label>
+    </div>
+    <button class="btn btn-red" type="submit">Get Started &gt;</button>
+  </form>
+</div>
     <!--FOOTER START-->
     <footer>
       <!-- SIGN-UP SECTION -->
@@ -320,10 +334,10 @@
         </div>
       </div>
 
-      <!-- QUESTIONS -->
-      <div class="questions">
-        <p>Questions? Call <a href="tel:0008009191694">000-800-919-1694</a></p>
-      </div>
+  <!-- QUESTIONS -->
+  <div class="questions">
+    <p>Questions? Call <a href="tel:0008009191694">000-800-919-1694</a></p>
+  </div>
 
       <!-- FOOTER LINKS -->
       <div class="footer-links">
@@ -352,16 +366,61 @@
         </ul>
       </div><br>
 
-      <!-- LANGUAGE + BRANDING -->
-      <div class="footer-bottom">
-        <select class="language-select" aria-label="Select Language">
-          <option value="en">English</option>
-          <option value="hi">हिन्दी</option>
-        </select>
-        <p class="netflix-india">Netflix India</p>
-      </div>
-    </footer>
-    <!--FOOTER END-->
+
+  <!-- Grouped Footer Links -->
+  <div class="footer-links">
+  <!-- Left Side -->
+  <div class="footer-links-column">
+    <ul>
+      <li style="color:red;><strong>Support</strong></li>
+      <li><a href="#">FAQ</a></li>
+      <li><a href="#">Help Centre</a></li>
+      <li><a href="#">Contact Us</a></li>
+      <li><a href="#">Speed Test</a></li>
+    </ul>
+    <ul>
+      <li style="color:red;><strong>Company</strong></li>
+      <li><a href="#">Account</a></li>
+      <li><a href="#">Jobs</a></li>
+      <li><a href="#">Media Centre</a></li>
+      <li><a href="#">Investor Relations</a></li>
+    </ul>
+  </div>
+
+  <!-- Right Side -->
+  <div class="footer-links-column">
+    <ul>
+      <li style="color:red;"><strong>Legal</strong></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="#">Terms of Use</a></li>
+      <li><a href="#">Cookie Preferences</a></li>
+      <li><a href="#">Legal Notices</a></li>
+    </ul>
+    <ul>
+      <li style="color:red;><strong>Platform</strong></li>
+      <li><a href="#">Ways to Watch</a></li>
+      <li><a href="#">Only on Netflix</a></li>
+      <li><a href="#">Corporate Information</a></li>
+    </ul>
+  </div>
+</div>
+
+
+  <!-- Language + Branding -->
+  <div class="footer-bottom">
+    <select class="language-select" aria-label="Select Language">
+      <option value="en">English</option>
+      <option value="hi">हिन्दी</option>
+    </select>
+    <p class="netflix-india">Netflix India © <span id="year"></span></p>
+  </div>
+</footer>
+
+<!-- Back to Top Button -->
+<button onclick="window.scrollTo({ top: 0, behavior: 'smooth' });" class="back-to-top" title="Back to top">
+  ↑
+</button>
+<!-- FOOTER END -->
 
     <!-- Chatbot Widget Start -->
     <div id="chatbot-widget">
@@ -476,8 +535,6 @@
         const newTheme = currentTheme === "light" ? "dark" : "light";
         setTheme(newTheme);
       });
-
-      // =======
 
       function toggleFAQ(element) {
         // Close all other FAQ items
