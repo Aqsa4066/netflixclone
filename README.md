@@ -74,17 +74,19 @@ Since this is a static clone, the flow is simple: HTML renders the structure, CS
 
 ---
 
-## 📸 Screenshots
+## 📸 Project Screenshots
 
-1. Introduction Page
-![introduction Page](screenshots/Main-Page.png)
+1. Home Page
+![Homepage Screenshot](assets/images/Homepage_of_Netflix_Clone.png)
 
-2. Category Page
-![Category Page](screenshots/Category.png)
+2. Download And Kids Profile Section
+![Download And Kids Profile Section](assets/images/Download_and_Kids_Profile_Features.png)
 
 3. Frequently Asked Questions
-![FAQs](screenshots/FAQs.png)
+![FAQs](assets/images/Frequently_Asked_Questions_(FAQ)_Section.png)
 
+4. Netflix Footer
+![Netflix Footer](assets/images/Netflix_Footer.png)
 ---
 ## 🚀 How to Use / Run
 
