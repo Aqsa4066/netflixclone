@@ -1,12 +1,120 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Netflix India-Watch TV Shows Online, Watch Movies Online</title>
-    <link rel="stylesheet" href="style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Netflix India - Watch TV Shows Online, Watch Movies Online</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    /* Google Translate Widget Styling for Footer */
+    #google_translate_element_footer {
+      margin: 10px 0;
+    }
     
-  </head>
+    #google_translate_element_footer .goog-te-gadget {
+      font-family: "Netflix Sans Bolder", "Poppins", sans-serif !important;
+      font-size: 14px !important;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+    
+    #google_translate_element_footer .goog-te-gadget .goog-te-combo {
+      background: rgba(0, 0, 0, 0.4) !important;
+      border: 1px solid rgba(255, 255, 255, 0.3) !important;
+      border-radius: 4px !important;
+      color: white !important;
+      padding: 8px 12px !important;
+      font-size: 14px !important;
+      font-weight: 400 !important;
+      backdrop-filter: blur(10px) !important;
+      min-width: 120px !important;
+      outline: none !important;
+      cursor: pointer !important;
+      margin: 0 !important;
+      display: inline-block !important;
+    }
+    
+    #google_translate_element_footer .goog-te-gadget .goog-te-combo:hover {
+      background: rgba(0, 0, 0, 0.6) !important;
+      border-color: rgba(255, 255, 255, 0.5) !important;
+    }
+    
+    #google_translate_element_footer .goog-te-gadget .goog-te-combo:focus {
+      outline: 2px solid #e50914 !important;
+      outline-offset: 2px !important;
+    }
+    
+    #google_translate_element_footer .goog-te-banner-frame {
+      display: none !important;
+    }
+    
+    #google_translate_element_footer .goog-te-menu-value {
+      color: white !important;
+    }
+    
+    #google_translate_element_footer .goog-te-menu-value span:first-child {
+      color: white !important;
+    }
+    
+    #google_translate_element_footer .goog-te-menu-value span:last-child {
+      color: rgba(255, 255, 255, 0.7) !important;
+    }
+    
+    /* Light theme support */
+    body[data-theme="light"] #google_translate_element_footer .goog-te-gadget .goog-te-combo {
+      background: rgba(255, 255, 255, 0.9) !important;
+      border-color: rgba(0, 0, 0, 0.2) !important;
+      color: #000 !important;
+    }
+    
+    body[data-theme="light"] #google_translate_element_footer .goog-te-gadget .goog-te-combo:hover {
+      background: rgba(255, 255, 255, 1) !important;
+      border-color: rgba(0, 0, 0, 0.3) !important;
+    }
+    
+    body[data-theme="light"] #google_translate_element_footer .goog-te-menu-value {
+      color: #000 !important;
+    }
+    
+    body[data-theme="light"] #google_translate_element_footer .goog-te-menu-value span:first-child {
+      color: #000 !important;
+    }
+    
+    body[data-theme="light"] #google_translate_element_footer .goog-te-menu-value span:last-child {
+      color: rgba(0, 0, 0, 0.7) !important;
+    }
+    
+    /* Mobile responsive */
+    @media (max-width: 768px) {
+      #google_translate_element_footer .goog-te-gadget .goog-te-combo {
+        padding: 6px 10px !important;
+        font-size: 13px !important;
+        min-width: 100px !important;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      #google_translate_element_footer .goog-te-gadget .goog-te-combo {
+        min-width: 80px !important;
+        padding: 5px 8px !important;
+        font-size: 12px !important;
+      }
+    }
+  </style>
+
+  <script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'en,hi,es,fr,de,ja,ko,zh-CN,ar',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        autoDisplay: false
+      }, 'google_translate_element_footer');
+    }
+  </script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</head>
 
   <body>
     <div class="main">
@@ -15,14 +123,15 @@
           ><img width="50vw" src="assets/Netflix_2015_logo.svg" alt=""
         /></span>
         <div class="nav-btn">
-          <button class="btn" id="theme-toggle">☀</button>
-          <div class="btn btn-lang">
-          <img class="language-switch" src="assets/language-svgrepo-com.svg"/>
+<button class="btn" id="theme-toggle">☀️</button>
+<div class="btn btn-lang">
+  <img class="language-switch" src="assets/language-svgrepo-com.svg" alt="Language" />
+</div>
+
           <select name="language" id="language-select">
-          <option value="english">English</option>
-          <option value="hindi">Hindi</option>
+          
           </select>
-         <img class="down-arrow" src="assets/down-arrow-svgrepo-com.svg"/>
+         
          </div>
          
           <a href="login.html" class="btn btn-red-sm">Sign_In</a>
@@ -351,14 +460,11 @@
         </ul>
       </div><br>
 
-      <!-- LANGUAGE + BRANDING -->
-      <div class="footer-bottom">
-        <select class="language-select" aria-label="Select Language">
-          <option value="en">English</option>
-          <option value="hi">हिन्दी</option>
-        </select>
-        <p class="netflix-india">Netflix India</p>
-      </div>
+             <!-- LANGUAGE + BRANDING -->
+       <div class="footer-bottom">
+         <div id="google_translate_element_footer"></div>
+         <p class="netflix-india">Netflix India</p>
+       </div>
     </footer>
     <!--FOOTER END-->
 
