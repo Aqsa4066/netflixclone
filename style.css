@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Dots:wght@400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&display=swap');
 
 @font-face {
   font-family: "Netflix Sans Bolder";
@@ -12,8 +15,11 @@
   --section-bg: black;
   --section-text-color: white;
 
-  --faq-box-bg: rgb(84, 83, 83);
-  --faq-box-hover-bg:rgb(147, 146, 146);
+  --faq-bg-color: black;
+  --faq-text-color: white;
+  --faq-box-bg: #f37d8b;
+  --faq-box-text-color: black;
+  --faq-box-hover-bg:#a0e6f5;
   --faq-svg-filter: invert(1);
 
   --first-image-filter: none;
@@ -38,6 +44,8 @@ body[data-theme="light"] {
   --section-bg: #f0f0f0;
   --section-text-color: black;
 
+  --faq-text-color: black;
+  --faq-bg-color: rgb(245, 228, 245);
   --faq-box-bg: whitesmoke;
   --faq-box-hover-bg: lightgray;
   --faq-svg-filter: none;
@@ -383,22 +391,31 @@ section.first > div :nth-child(2) {
 }
 
 .faq {
-  background-color: var(--section-bg);
+  /* background-color: var(--section-bg); */
   color: var(--section-text-color);
   padding-left: 148px;
   padding-right: 148px;
   text-size-adjust: 100%;
   justify-content: space-between;
+  background-color: var(--faq-bg-color);
   
 }
 .faq h2 {
-  font-size: 24px;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  font-family: "Bebas Neue";
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: var(--faq-text-color);
 }
 .faqbox{
     display: flex;
     flex-direction: column;
     transition: all 0.5s ease-out;
-    background-color: rgb(84, 83, 83);
+    /* background-color: rgb(84, 83, 83); */
+    background-color: #f48f9b;
     justify-content: space-between;
     padding: 24px;
     max-width: 1607px;
@@ -406,13 +423,14 @@ section.first > div :nth-child(2) {
     font-style: normal;
     cursor: pointer;
     margin-top: 7px;
+    color: var(--faq-box-text-color);
 }
 
 
 
 
 .faqbox:hover {
-  background-color: rgb(147, 146, 146);
+  background-color: #9dcad4;
 }
 
 .faqbox svg {
@@ -436,11 +454,12 @@ section.first > div :nth-child(2) {
   width: 100%;
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.3s ease, padding 0.3s ease;
+  transition: max-height 0.2s ease, padding 0.2s ease;
   font-size: 18px;
   line-height: 1.5;
   margin-top: 0px;
   border-top: none;
+  font-family: Montserrat;
 }
 
 .faqbox.active .faq-answer {
@@ -469,7 +488,6 @@ footer{
     gap: 23px;
 .faqbox:hover {
   background-color: var(--faq-box-hover-bg);
-
 }
 .faqbox svg {
   filter: var(--faq-svg-filter);
