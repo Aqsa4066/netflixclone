@@ -85,7 +85,7 @@ Since this is a static clone, the flow is simple: HTML renders the structure, CS
 3. Frequently Asked Questions
 ![FAQs](assets/images/Frequently_Asked_Questions_FAQ_section.png)
 4. Netflix Footer
-![Netflix footer](assets/images/Netflix_footer.png)
+![Netflix Footer](assets/images/Netflix_Footer.png)
 ---
 ## 🚀 How to Use / Run
 
