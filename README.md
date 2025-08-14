@@ -83,9 +83,9 @@ Since this is a static clone, the flow is simple: HTML renders the structure, CS
 ![Download And Kids Profile Section](assets/images/Download_and_Kids_Profile_Features.png)
 
 3. Frequently Asked Questions
-![FAQs](assets/images/Frequently_Asked_Questions_(FAQ)_section.png)
+![FAQs](assets/images/Frequently_Asked_Questions_FAQ_section.png)
 4. Netflix Footer
-![Netflix Footer](assets/images/Netflix_footer.png)
+![Netflix footer](assets/images/Netflix_footer.png)
 ---
 ## 🚀 How to Use / Run
 
