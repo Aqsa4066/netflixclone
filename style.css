@@ -45,7 +45,7 @@ body[data-theme="light"] {
   --section-text-color: black;
 
   --faq-text-color: black;
-  --faq-bg-color: rgb(245, 228, 245);
+  --faq-bg-color: #e9ecef;
   --faq-box-bg: whitesmoke;
   --faq-box-hover-bg: lightgray;
   --faq-svg-filter: none;
@@ -415,7 +415,7 @@ section.first > div :nth-child(2) {
     flex-direction: column;
     transition: all 0.5s ease-out;
     /* background-color: rgb(84, 83, 83); */
-    background-color: #f48f9b;
+    background-color: #aeb5bc;
     justify-content: space-between;
     padding: 24px;
     max-width: 1607px;
@@ -424,13 +424,15 @@ section.first > div :nth-child(2) {
     cursor: pointer;
     margin-top: 7px;
     color: var(--faq-box-text-color);
+    margin-bottom: 15px;
 }
 
 
 
 
 .faqbox:hover {
-  background-color: #9dcad4;
+  background: linear-gradient(90deg, #a8b4c1 40%, #6c757d);
+  border: 1.5px solid black;
 }
 
 .faqbox svg {
